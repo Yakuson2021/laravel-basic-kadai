@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 // ルーティングを設定するコントローラを宣言する
-use App\Http\Controllers\HelloController;
+use App\Http\Controllers\Posts\PostController; 
 
 
 /*
@@ -24,4 +24,4 @@ Route::get('/hello', function () {
     return 'あああ';
 });
 
-Route::get('/posts', [HelloController::class, 'index']);
+Route::get('/posts', [PostController::class, 'index']);
