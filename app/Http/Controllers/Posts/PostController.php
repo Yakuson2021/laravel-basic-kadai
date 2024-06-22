@@ -8,6 +8,6 @@ use App\Http\Controllers\Controller;
 
 class PostController extends Controller {
     public function index() {
-        return 'Hello, world!';
+        return view('posts.index');
     }
 }
